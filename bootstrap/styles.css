@@ -1,0 +1,61 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    position: fixed; /* Fixed position for header */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+/* Sidebar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Sidebar background */
+    align-items: center!important; /* Center items vertically */
+    text-align: center !important;/* Center text */
+}
+
+.navbar-nav {
+    flex-direction: column; /* Stack nav items vertically */
+}
+
+#content {
+    padding-top: 70px; /* Space for fixed header */
+    background-color: #f8f9fa;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    margin-top: 70px; /* Space for fixed header */
+}
+
+/* Blog Card */
+.blog-card {
+    margin-bottom: 20px; /* Spacing between blog cards */
+}
+
+.custom-color {
+    color: #985F4B; /* Custom color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    #content {
+        margin-left: 0; /* Full width content */
+    }
+}
